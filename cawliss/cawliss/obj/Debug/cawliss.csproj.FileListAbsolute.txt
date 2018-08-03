@@ -1,0 +1,9 @@
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.Form1.resources
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.Properties.Resources.resources
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.csproj.GenerateResource.cache
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.csproj.CoreCompileInputs.cache
+c:\users\benjamin\source\repos\cawliss\cawliss\bin\Debug\cawliss.exe.config
+c:\users\benjamin\source\repos\cawliss\cawliss\bin\Debug\cawliss.exe
+c:\users\benjamin\source\repos\cawliss\cawliss\bin\Debug\cawliss.pdb
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.exe
+c:\users\benjamin\source\repos\cawliss\cawliss\obj\Debug\cawliss.pdb
