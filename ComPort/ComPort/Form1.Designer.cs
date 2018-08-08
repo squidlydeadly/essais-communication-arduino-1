@@ -64,7 +64,6 @@
             this.chBoxUsingButton = new System.Windows.Forms.CheckBox();
             this.btnClearDataOut = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.tBoxDataIN = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.lblDataInLength = new System.Windows.Forms.Label();
@@ -73,6 +72,13 @@
             this.chBoxAddToOldData = new System.Windows.Forms.CheckBox();
             this.chBoxAlwaysUpdate = new System.Windows.Forms.CheckBox();
             this.btnClearDataIN = new System.Windows.Forms.Button();
+            this.tBoxDataIN = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -85,6 +91,7 @@
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -101,9 +108,11 @@
             this.groupBox1.Controls.Add(this.cBoxDataBits);
             this.groupBox1.Controls.Add(this.CBoxBaudRate);
             this.groupBox1.Controls.Add(this.cBoxCOMPORT);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(238, 192);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(317, 236);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Com Port Control";
@@ -112,9 +121,10 @@
             // 
             this.chBoxRTSEnable.AutoSize = true;
             this.chBoxRTSEnable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chBoxRTSEnable.Location = new System.Drawing.Point(128, 160);
+            this.chBoxRTSEnable.Location = new System.Drawing.Point(171, 197);
+            this.chBoxRTSEnable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxRTSEnable.Name = "chBoxRTSEnable";
-            this.chBoxRTSEnable.Size = new System.Drawing.Size(100, 19);
+            this.chBoxRTSEnable.Size = new System.Drawing.Size(122, 22);
             this.chBoxRTSEnable.TabIndex = 11;
             this.chBoxRTSEnable.Text = "RTS ENABLE";
             this.chBoxRTSEnable.UseVisualStyleBackColor = true;
@@ -124,9 +134,10 @@
             // 
             this.chBoxDtrEnable.AutoSize = true;
             this.chBoxDtrEnable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chBoxDtrEnable.Location = new System.Drawing.Point(24, 160);
+            this.chBoxDtrEnable.Location = new System.Drawing.Point(32, 197);
+            this.chBoxDtrEnable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxDtrEnable.Name = "chBoxDtrEnable";
-            this.chBoxDtrEnable.Size = new System.Drawing.Size(101, 19);
+            this.chBoxDtrEnable.Size = new System.Drawing.Size(123, 22);
             this.chBoxDtrEnable.TabIndex = 10;
             this.chBoxDtrEnable.Text = "DTR ENABLE";
             this.chBoxDtrEnable.UseVisualStyleBackColor = true;
@@ -135,45 +146,50 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 131);
+            this.label5.Location = new System.Drawing.Point(29, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(91, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "PARITY BITS";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 104);
+            this.label4.Location = new System.Drawing.Point(29, 128);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.Size = new System.Drawing.Size(80, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "STOP BITS";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 77);
+            this.label3.Location = new System.Drawing.Point(29, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "DATA BITS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 50);
+            this.label2.Location = new System.Drawing.Point(29, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(87, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "BAUD RATE";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 23);
+            this.label1.Location = new System.Drawing.Point(29, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "COM PORT";
             // 
@@ -184,9 +200,10 @@
             "None",
             "Odd",
             "Even"});
-            this.cBoxParityBits.Location = new System.Drawing.Point(101, 127);
+            this.cBoxParityBits.Location = new System.Drawing.Point(135, 156);
+            this.cBoxParityBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBoxParityBits.Name = "cBoxParityBits";
-            this.cBoxParityBits.Size = new System.Drawing.Size(121, 21);
+            this.cBoxParityBits.Size = new System.Drawing.Size(160, 24);
             this.cBoxParityBits.TabIndex = 4;
             this.cBoxParityBits.Text = "None";
             // 
@@ -196,9 +213,10 @@
             this.cBoxStopBits.Items.AddRange(new object[] {
             "One",
             "Two"});
-            this.cBoxStopBits.Location = new System.Drawing.Point(101, 100);
+            this.cBoxStopBits.Location = new System.Drawing.Point(135, 123);
+            this.cBoxStopBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBoxStopBits.Name = "cBoxStopBits";
-            this.cBoxStopBits.Size = new System.Drawing.Size(121, 21);
+            this.cBoxStopBits.Size = new System.Drawing.Size(160, 24);
             this.cBoxStopBits.TabIndex = 3;
             this.cBoxStopBits.Text = "One";
             // 
@@ -209,9 +227,10 @@
             "6",
             "7",
             "8"});
-            this.cBoxDataBits.Location = new System.Drawing.Point(101, 73);
+            this.cBoxDataBits.Location = new System.Drawing.Point(135, 90);
+            this.cBoxDataBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBoxDataBits.Name = "cBoxDataBits";
-            this.cBoxDataBits.Size = new System.Drawing.Size(121, 21);
+            this.cBoxDataBits.Size = new System.Drawing.Size(160, 24);
             this.cBoxDataBits.TabIndex = 2;
             this.cBoxDataBits.Text = "8";
             // 
@@ -222,18 +241,20 @@
             "2400",
             "4800",
             "9600"});
-            this.CBoxBaudRate.Location = new System.Drawing.Point(101, 46);
+            this.CBoxBaudRate.Location = new System.Drawing.Point(135, 57);
+            this.CBoxBaudRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBoxBaudRate.Name = "CBoxBaudRate";
-            this.CBoxBaudRate.Size = new System.Drawing.Size(121, 21);
+            this.CBoxBaudRate.Size = new System.Drawing.Size(160, 24);
             this.CBoxBaudRate.TabIndex = 1;
             this.CBoxBaudRate.Text = "9600";
             // 
             // cBoxCOMPORT
             // 
             this.cBoxCOMPORT.FormattingEnabled = true;
-            this.cBoxCOMPORT.Location = new System.Drawing.Point(101, 19);
+            this.cBoxCOMPORT.Location = new System.Drawing.Point(135, 23);
+            this.cBoxCOMPORT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBoxCOMPORT.Name = "cBoxCOMPORT";
-            this.cBoxCOMPORT.Size = new System.Drawing.Size(121, 21);
+            this.cBoxCOMPORT.Size = new System.Drawing.Size(160, 24);
             this.cBoxCOMPORT.TabIndex = 0;
             // 
             // groupBox2
@@ -242,18 +263,22 @@
             this.groupBox2.Controls.Add(this.progressBar1);
             this.groupBox2.Controls.Add(this.btnClose);
             this.groupBox2.Controls.Add(this.btnOpen);
-            this.groupBox2.Location = new System.Drawing.Point(12, 204);
+            this.groupBox2.Location = new System.Drawing.Point(16, 251);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(238, 152);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(317, 187);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.lblStatusCom);
-            this.groupBox8.Location = new System.Drawing.Point(101, 13);
+            this.groupBox8.Location = new System.Drawing.Point(135, 16);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(127, 98);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Size = new System.Drawing.Size(169, 121);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "COM PORT STATUS";
@@ -262,24 +287,27 @@
             // 
             this.lblStatusCom.AutoSize = true;
             this.lblStatusCom.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusCom.Location = new System.Drawing.Point(37, 34);
+            this.lblStatusCom.Location = new System.Drawing.Point(49, 42);
+            this.lblStatusCom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatusCom.Name = "lblStatusCom";
-            this.lblStatusCom.Size = new System.Drawing.Size(52, 27);
+            this.lblStatusCom.Size = new System.Drawing.Size(64, 33);
             this.lblStatusCom.TabIndex = 0;
             this.lblStatusCom.Text = "OFF";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(9, 117);
+            this.progressBar1.Location = new System.Drawing.Point(12, 144);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(218, 23);
+            this.progressBar1.Size = new System.Drawing.Size(291, 28);
             this.progressBar1.TabIndex = 2;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(9, 66);
+            this.btnClose.Location = new System.Drawing.Point(12, 81);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(88, 45);
+            this.btnClose.Size = new System.Drawing.Size(117, 55);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -287,9 +315,10 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(9, 16);
+            this.btnOpen.Location = new System.Drawing.Point(12, 20);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(88, 45);
+            this.btnOpen.Size = new System.Drawing.Size(117, 55);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "OPEN";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -297,9 +326,10 @@
             // 
             // btnSendData
             // 
-            this.btnSendData.Location = new System.Drawing.Point(15, 16);
+            this.btnSendData.Location = new System.Drawing.Point(20, 20);
+            this.btnSendData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSendData.Name = "btnSendData";
-            this.btnSendData.Size = new System.Drawing.Size(93, 33);
+            this.btnSendData.Size = new System.Drawing.Size(124, 41);
             this.btnSendData.TabIndex = 2;
             this.btnSendData.Text = "Send Data";
             this.btnSendData.UseVisualStyleBackColor = true;
@@ -307,10 +337,11 @@
             // 
             // tBoxDataOut
             // 
-            this.tBoxDataOut.Location = new System.Drawing.Point(6, 18);
+            this.tBoxDataOut.Location = new System.Drawing.Point(8, 22);
+            this.tBoxDataOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxDataOut.Multiline = true;
             this.tBoxDataOut.Name = "tBoxDataOut";
-            this.tBoxDataOut.Size = new System.Drawing.Size(337, 173);
+            this.tBoxDataOut.Size = new System.Drawing.Size(448, 212);
             this.tBoxDataOut.TabIndex = 3;
             this.tBoxDataOut.TextChanged += new System.EventHandler(this.tBoxDataOut_TextChanged);
             this.tBoxDataOut.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBoxDataOut_KeyDown);
@@ -323,9 +354,11 @@
             // 
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.tBoxDataOut);
-            this.groupBox3.Location = new System.Drawing.Point(257, 13);
+            this.groupBox3.Location = new System.Drawing.Point(343, 16);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(353, 343);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(471, 422);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Transmitter Control";
@@ -337,9 +370,11 @@
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.btnSendData);
             this.groupBox4.Controls.Add(this.btnClearDataOut);
-            this.groupBox4.Location = new System.Drawing.Point(6, 191);
+            this.groupBox4.Location = new System.Drawing.Point(8, 235);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(337, 140);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(449, 172);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             // 
@@ -347,9 +382,11 @@
             // 
             this.groupBox7.Controls.Add(this.lblDataOutLength);
             this.groupBox7.Controls.Add(this.label6);
-            this.groupBox7.Location = new System.Drawing.Point(7, 88);
+            this.groupBox7.Location = new System.Drawing.Point(9, 108);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(315, 38);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Size = new System.Drawing.Size(420, 47);
             this.groupBox7.TabIndex = 7;
             this.groupBox7.TabStop = false;
             // 
@@ -357,9 +394,10 @@
             // 
             this.lblDataOutLength.AutoSize = true;
             this.lblDataOutLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataOutLength.Location = new System.Drawing.Point(198, 13);
+            this.lblDataOutLength.Location = new System.Drawing.Point(264, 16);
+            this.lblDataOutLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataOutLength.Name = "lblDataOutLength";
-            this.lblDataOutLength.Size = new System.Drawing.Size(24, 17);
+            this.lblDataOutLength.Size = new System.Drawing.Size(27, 20);
             this.lblDataOutLength.TabIndex = 6;
             this.lblDataOutLength.Text = "00";
             // 
@@ -367,9 +405,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(64, 13);
+            this.label6.Location = new System.Drawing.Point(85, 16);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 17);
+            this.label6.Size = new System.Drawing.Size(156, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Data OUT Length : ";
             // 
@@ -377,18 +416,21 @@
             // 
             this.groupBox6.Controls.Add(this.chBoxWrite);
             this.groupBox6.Controls.Add(this.chBoxWriteLine);
-            this.groupBox6.Location = new System.Drawing.Point(223, 10);
+            this.groupBox6.Location = new System.Drawing.Point(297, 12);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(84, 77);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(112, 95);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             // 
             // chBoxWrite
             // 
             this.chBoxWrite.AutoSize = true;
-            this.chBoxWrite.Location = new System.Drawing.Point(7, 43);
+            this.chBoxWrite.Location = new System.Drawing.Point(9, 53);
+            this.chBoxWrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxWrite.Name = "chBoxWrite";
-            this.chBoxWrite.Size = new System.Drawing.Size(51, 17);
+            this.chBoxWrite.Size = new System.Drawing.Size(63, 21);
             this.chBoxWrite.TabIndex = 1;
             this.chBoxWrite.Text = "Write";
             this.chBoxWrite.UseVisualStyleBackColor = true;
@@ -397,9 +439,10 @@
             // chBoxWriteLine
             // 
             this.chBoxWriteLine.AutoSize = true;
-            this.chBoxWriteLine.Location = new System.Drawing.Point(7, 21);
+            this.chBoxWriteLine.Location = new System.Drawing.Point(9, 26);
+            this.chBoxWriteLine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxWriteLine.Name = "chBoxWriteLine";
-            this.chBoxWriteLine.Size = new System.Drawing.Size(71, 17);
+            this.chBoxWriteLine.Size = new System.Drawing.Size(90, 21);
             this.chBoxWriteLine.TabIndex = 0;
             this.chBoxWriteLine.Text = "WriteLine";
             this.chBoxWriteLine.UseVisualStyleBackColor = true;
@@ -409,18 +452,21 @@
             // 
             this.groupBox5.Controls.Add(this.chBoxUsingEnter);
             this.groupBox5.Controls.Add(this.chBoxUsingButton);
-            this.groupBox5.Location = new System.Drawing.Point(118, 10);
+            this.groupBox5.Location = new System.Drawing.Point(157, 12);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(99, 77);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(132, 95);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
             // chBoxUsingEnter
             // 
             this.chBoxUsingEnter.AutoSize = true;
-            this.chBoxUsingEnter.Location = new System.Drawing.Point(7, 43);
+            this.chBoxUsingEnter.Location = new System.Drawing.Point(9, 53);
+            this.chBoxUsingEnter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxUsingEnter.Name = "chBoxUsingEnter";
-            this.chBoxUsingEnter.Size = new System.Drawing.Size(81, 17);
+            this.chBoxUsingEnter.Size = new System.Drawing.Size(104, 21);
             this.chBoxUsingEnter.TabIndex = 1;
             this.chBoxUsingEnter.Text = "Using Enter";
             this.chBoxUsingEnter.UseVisualStyleBackColor = true;
@@ -428,9 +474,10 @@
             // chBoxUsingButton
             // 
             this.chBoxUsingButton.AutoSize = true;
-            this.chBoxUsingButton.Location = new System.Drawing.Point(7, 21);
+            this.chBoxUsingButton.Location = new System.Drawing.Point(9, 26);
+            this.chBoxUsingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxUsingButton.Name = "chBoxUsingButton";
-            this.chBoxUsingButton.Size = new System.Drawing.Size(87, 17);
+            this.chBoxUsingButton.Size = new System.Drawing.Size(111, 21);
             this.chBoxUsingButton.TabIndex = 0;
             this.chBoxUsingButton.Text = "Using Button";
             this.chBoxUsingButton.UseVisualStyleBackColor = true;
@@ -438,9 +485,10 @@
             // 
             // btnClearDataOut
             // 
-            this.btnClearDataOut.Location = new System.Drawing.Point(15, 53);
+            this.btnClearDataOut.Location = new System.Drawing.Point(20, 65);
+            this.btnClearDataOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearDataOut.Name = "btnClearDataOut";
-            this.btnClearDataOut.Size = new System.Drawing.Size(93, 34);
+            this.btnClearDataOut.Size = new System.Drawing.Size(124, 42);
             this.btnClearDataOut.TabIndex = 4;
             this.btnClearDataOut.Text = "Clear Data OUT";
             this.btnClearDataOut.UseVisualStyleBackColor = true;
@@ -450,29 +498,25 @@
             // 
             this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.tBoxDataIN);
-            this.groupBox9.Location = new System.Drawing.Point(616, 13);
+            this.groupBox9.Location = new System.Drawing.Point(821, 16);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(357, 343);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Size = new System.Drawing.Size(476, 422);
             this.groupBox9.TabIndex = 5;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Receiver Control";
-            // 
-            // tBoxDataIN
-            // 
-            this.tBoxDataIN.Location = new System.Drawing.Point(8, 18);
-            this.tBoxDataIN.Multiline = true;
-            this.tBoxDataIN.Name = "tBoxDataIN";
-            this.tBoxDataIN.Size = new System.Drawing.Size(337, 173);
-            this.tBoxDataIN.TabIndex = 6;
             // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.groupBox11);
             this.groupBox10.Controls.Add(this.groupBox13);
             this.groupBox10.Controls.Add(this.btnClearDataIN);
-            this.groupBox10.Location = new System.Drawing.Point(8, 191);
+            this.groupBox10.Location = new System.Drawing.Point(11, 235);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(337, 140);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Size = new System.Drawing.Size(449, 172);
             this.groupBox10.TabIndex = 8;
             this.groupBox10.TabStop = false;
             // 
@@ -480,9 +524,11 @@
             // 
             this.groupBox11.Controls.Add(this.lblDataInLength);
             this.groupBox11.Controls.Add(this.label8);
-            this.groupBox11.Location = new System.Drawing.Point(7, 88);
+            this.groupBox11.Location = new System.Drawing.Point(9, 108);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(315, 38);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Size = new System.Drawing.Size(420, 47);
             this.groupBox11.TabIndex = 7;
             this.groupBox11.TabStop = false;
             // 
@@ -490,9 +536,10 @@
             // 
             this.lblDataInLength.AutoSize = true;
             this.lblDataInLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataInLength.Location = new System.Drawing.Point(200, 13);
+            this.lblDataInLength.Location = new System.Drawing.Point(267, 16);
+            this.lblDataInLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataInLength.Name = "lblDataInLength";
-            this.lblDataInLength.Size = new System.Drawing.Size(24, 17);
+            this.lblDataInLength.Size = new System.Drawing.Size(27, 20);
             this.lblDataInLength.TabIndex = 6;
             this.lblDataInLength.Text = "00";
             // 
@@ -500,9 +547,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(78, 13);
+            this.label8.Location = new System.Drawing.Point(104, 16);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 17);
+            this.label8.Size = new System.Drawing.Size(137, 20);
             this.label8.TabIndex = 5;
             this.label8.Text = "Data IN Length : ";
             // 
@@ -510,18 +558,21 @@
             // 
             this.groupBox13.Controls.Add(this.chBoxAddToOldData);
             this.groupBox13.Controls.Add(this.chBoxAlwaysUpdate);
-            this.groupBox13.Location = new System.Drawing.Point(162, 10);
+            this.groupBox13.Location = new System.Drawing.Point(216, 12);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(127, 77);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Size = new System.Drawing.Size(169, 95);
             this.groupBox13.TabIndex = 5;
             this.groupBox13.TabStop = false;
             // 
             // chBoxAddToOldData
             // 
             this.chBoxAddToOldData.AutoSize = true;
-            this.chBoxAddToOldData.Location = new System.Drawing.Point(7, 43);
+            this.chBoxAddToOldData.Location = new System.Drawing.Point(9, 53);
+            this.chBoxAddToOldData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxAddToOldData.Name = "chBoxAddToOldData";
-            this.chBoxAddToOldData.Size = new System.Drawing.Size(106, 17);
+            this.chBoxAddToOldData.Size = new System.Drawing.Size(136, 21);
             this.chBoxAddToOldData.TabIndex = 1;
             this.chBoxAddToOldData.Text = "Add To Old Data";
             this.chBoxAddToOldData.UseVisualStyleBackColor = true;
@@ -530,9 +581,10 @@
             // chBoxAlwaysUpdate
             // 
             this.chBoxAlwaysUpdate.AutoSize = true;
-            this.chBoxAlwaysUpdate.Location = new System.Drawing.Point(7, 21);
+            this.chBoxAlwaysUpdate.Location = new System.Drawing.Point(9, 26);
+            this.chBoxAlwaysUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chBoxAlwaysUpdate.Name = "chBoxAlwaysUpdate";
-            this.chBoxAlwaysUpdate.Size = new System.Drawing.Size(97, 17);
+            this.chBoxAlwaysUpdate.Size = new System.Drawing.Size(123, 21);
             this.chBoxAlwaysUpdate.TabIndex = 0;
             this.chBoxAlwaysUpdate.Text = "Always Update";
             this.chBoxAlwaysUpdate.UseVisualStyleBackColor = true;
@@ -540,23 +592,93 @@
             // 
             // btnClearDataIN
             // 
-            this.btnClearDataIN.Location = new System.Drawing.Point(63, 16);
+            this.btnClearDataIN.Location = new System.Drawing.Point(84, 20);
+            this.btnClearDataIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearDataIN.Name = "btnClearDataIN";
-            this.btnClearDataIN.Size = new System.Drawing.Size(93, 71);
+            this.btnClearDataIN.Size = new System.Drawing.Size(124, 87);
             this.btnClearDataIN.TabIndex = 4;
             this.btnClearDataIN.Text = "Clear Data IN";
             this.btnClearDataIN.UseVisualStyleBackColor = true;
             this.btnClearDataIN.Click += new System.EventHandler(this.btnClearDataIN_Click);
             // 
+            // tBoxDataIN
+            // 
+            this.tBoxDataIN.Location = new System.Drawing.Point(11, 22);
+            this.tBoxDataIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tBoxDataIN.Multiline = true;
+            this.tBoxDataIN.Name = "tBoxDataIN";
+            this.tBoxDataIN.Size = new System.Drawing.Size(448, 212);
+            this.tBoxDataIN.TabIndex = 6;
+            this.tBoxDataIN.TextChanged += new System.EventHandler(this.tBoxDataIN_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(1526, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(109, 100);
+            this.panel1.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(1352, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(109, 100);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(1352, 251);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(283, 187);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1352, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(283, 35);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Load Image";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1360, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 17);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Average Color";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1523, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(112, 17);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Most Used Color";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 369);
+            this.ClientSize = new System.Drawing.Size(1672, 454);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "C# COM PORT SERIAL";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -581,7 +703,9 @@
             this.groupBox11.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -631,6 +755,12 @@
         private System.Windows.Forms.CheckBox chBoxAddToOldData;
         private System.Windows.Forms.CheckBox chBoxAlwaysUpdate;
         private System.Windows.Forms.Button btnClearDataIN;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
     }
 }
 

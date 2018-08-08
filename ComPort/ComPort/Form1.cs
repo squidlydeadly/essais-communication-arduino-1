@@ -240,5 +240,51 @@ namespace ComPort
                 tBoxDataIN.Text = "";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string fileName = null;
+
+            using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
+            {
+                openFileDialog1.InitialDirectory = "c:\\";
+                openFileDialog1.FilterIndex = 2;
+                openFileDialog1.RestoreDirectory = true;
+
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = openFileDialog1.FileName;
+                }
+            }
+
+            if (fileName != null)
+            {
+                Color averageColor = new Color();
+                Color mostUsedColor = new Color();
+
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                this.pictureBox1.Image = new Bitmap(fileName);
+                //Do something with the file, for example read text from it
+                ComPort.Program.findDominantColor(fileName, ref averageColor, ref mostUsedColor);
+
+                this.panel1.BackColor = mostUsedColor;
+                this.panel2.BackColor = averageColor;
+            }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxDataIN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
