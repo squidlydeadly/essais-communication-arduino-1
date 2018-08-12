@@ -107,6 +107,7 @@ namespace ComPort
 
         public static void sendRGBonPort(byte[] byteArray)
         {
+            
             SerialPort port = new SerialPort("COM9");
             port.BaudRate = 9600;
             port.DataBits = 8;
